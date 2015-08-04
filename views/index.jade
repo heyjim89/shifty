@@ -1,39 +1,4 @@
 extends layout
 
 block content
-
-style(type='text/css', media='screen').
-  #ball {
-  background-color: #CCC;
-  top:0;
-  left:0;
-  position: absolute;
-  padding: 10px;
-  border-radius: 10px;
-  }
-body
-#ball
-script(src='https://cdn.rawgit.com/jeremyckahn/shifty/1.2.3/dist/shifty.min.js')
-script.
-  var ball=document.getElementById('ball')
-  , style=ball.style
-  , myTweenable = new Tweenable()
-  , update
-  var updater = function(){
-  myPos = myTweenable.get()
-  style.left= myPos.x + 'px';
-  style.top= myPos.y + 'px';
-  }
-  function loop(){
-  style.left=0;
-  style.top=0;
-  myTweenable.tween({
-  from: { x: 0, y: 0 },
-  to: { x: 250, y: 250 },
-  duration: 500,
-  easing: 'easeOutQuad',
-  start:function(){update = setInterval(function(){updater()},0)},
-  callback: function () {clearInterval(update);loop();}
-  });
-  }
-  loop();
+	h1 Hello Boulder!
