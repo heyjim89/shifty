@@ -138,6 +138,7 @@
     'helixInit': init
     ,'helixPlay': play
     ,'helixPause': pause
+    
   };
 
   btnHelixStart = document.getElementById('btnHelixStart');
