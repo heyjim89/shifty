@@ -1,6 +1,7 @@
 var express = require('express');
 var bodyParser = require('body-parser');
 var indexController = require('./controllers/index.js');
+var shifty = require('shifty')
 
 var app = express();
 app.set('view engine', 'jade');
@@ -10,6 +11,6 @@ app.use(bodyParser.urlencoded({extended: false}));
 
 app.get('/', indexController.index);
 
-var server = app.listen(6425, function() {
+var server = app.listen(3000, function() {
 	console.log('Express server listening on port ' + server.address().port);
 });

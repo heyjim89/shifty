@@ -1,0 +1,35 @@
+.big-button {
+  display: block;
+  font-size: 30px;
+  font-weight: bold;
+  margin: 15px auto 10px;
+  height: 60px;
+  width: 420px;
+}
+
+.segment {
+  background-color: white;
+  clear: both;
+  float: left;
+  height: 20px;
+  width: 35px;
+  position: relative;
+  border: 1px solid black;
+  border-radius: 10px;
+  text-align: center;
+}
+
+#helix-container {
+  background: grey;
+  border: solid 1px #000;
+  overflow: hidden;
+  margin: 0px auto 40px;
+  padding: 50px;
+  width: 650px;
+}
+
+
+
+h3 {
+  text-align: center;
+}
