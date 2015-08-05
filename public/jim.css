@@ -1,0 +1,14 @@
+#ball {
+      background-color: red;
+      top:0;
+      left:0;
+      position: absolute;
+      padding: 10px;
+      border-radius: 60px;
+      width:100px;
+      height:100px;
+      text-align:center;
+      font-size: 20px;
+      font-weight: bold;
+      color: white;
+    }
