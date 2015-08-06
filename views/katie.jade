@@ -2,16 +2,55 @@ extends layout
 
 
 block content	
-	.row
-		.container
-			.col-md-3
-				.magic-box
-			.col-md-3
-				.magic-box
-			.col-md-3
-				.magic-box
-			.col-md-3
-				.magic-box
+	.container-fluid
+
+		.row
+			.col-md-10.col-md-offset-1
+				h2 COLOR TWEENING	
+
+		.row.box-row
+			.col-md-10.col-md-offset-1
+				.col-md-3.box-sizing.box.magic1
+					h3
+				.col-md-3.box-sizing.box.magic2
+					h3
+				.col-md-3.box-sizing.box.magic3
+					h3
+				.col-md-3.box-sizing.box.magic4 
+					h3
+
+		.row
+			.col-md-5.col-md-offset-1
+				h4 Jade
+				pre(style='white-space:pre;')
+					|extends layout
+					| 
+					|	
+					|block content	
+					|	.container-fluid
+					|		.row
+					|			.col-md-8.col-md-offset-2
+					|				.col-md-3.box.magic1
+					|					h3
+
+			.col-md-5
+				h4 JS
+				pre(style='white-space:pre;')
+					|var output1 = document.querySelector('.magic1');
+					|	var tweenable = new Tweenable();
+					|	
+					|	tweenable.tween({
+					|		from 	: { color : 'rgb(70, 192, 49)' },
+					|		to 	: { color : 'rgb(232, 75, 79)' },
+					|		uration	: 20000,
+					|		easing	: 'easeOutQuart',
+					|		step 	: function (state) {
+					|	output1.innerHTML = state.color;
+					|	output1.style.background = state.color;
+					|	}
+					|	
+					|});
+
 
 
 

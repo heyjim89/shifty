@@ -4,6 +4,15 @@ var indexController = {
 	},
 	katie: function(req, res) {
 		res.render('katie');
+	},
+	jim: function(req, res) {
+		res.render('jim');
+	},
+	justin: function(req, res) {
+		res.render('justin');
+	},
+	michael: function(req, res) {
+		res.render('michael');
 	}
 };
 
