@@ -1,0 +1,52 @@
+#ball {
+      background-color: red;
+      top:0;
+      left:0;
+      position: absolute;
+      padding: 10px;
+      border-radius: 60px;
+      width:100px;
+      height:100px;
+      text-align:center;
+      font-size: 20px;
+      font-weight: bold;
+      color: white;
+    }
+#square {
+      background-color: purple;
+      top:0;
+      left:100px;
+      position: absolute;
+      padding: 10px;
+      border-radius: 0px;
+      width:100px;
+      height:100px;
+      text-align:center;
+      font-size: 20px;
+      font-weight: bold;
+      color: white;
+    }
+#ball2 {
+      background-color: blue;
+      top:0;
+      left:0;
+      position: absolute;
+      padding: 10px;
+      border-radius: 30px;
+      width:100px;
+      height:100px;
+      text-align:center;
+      font-size: 20px;
+      font-weight: bold;
+      color: white;
+    }
+#ball2 > p {
+      position: absolute;
+      top:20px;
+      left:20px;
+}
+#ball > p {
+      position: absolute;
+      top:20px;
+      left:20px;
+}
