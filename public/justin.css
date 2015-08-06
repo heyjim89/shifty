@@ -1,4 +1,4 @@
-.big-button {
+/*.big-button {
   display: block;
   font-size: 30px;
   font-weight: bold;
@@ -8,7 +8,7 @@
 }
 
 .segment {
-  background-color: white;
+  background-color: red;
   clear: both;
   float: left;
   height: 20px;
@@ -20,7 +20,7 @@
 }
 
 #helix-container {
-  background: grey;
+  background: black;
   border: solid 1px #000;
   overflow: hidden;
   margin: 0px auto 40px;
@@ -32,4 +32,24 @@
 
 h3 {
   text-align: center;
+}*/
+
+.a {
+  position: absolute;
 }
+
+/*#text1 {
+      position: absolute;
+    }
+
+#text2 {
+      position: absolute;
+    }
+
+#text3 {
+      position: absolute;
+    }
+
+#text4 {
+      position: absolute;
+    }*/
