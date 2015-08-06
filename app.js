@@ -11,6 +11,6 @@ app.use(bodyParser.urlencoded({extended: false}));
 app.get('/', indexController.index);
 app.get('/jim', indexController.jim);
 
-var server = app.listen(6425, function() {
+var server = app.listen(3000, function() {
 	console.log('Express server listening on port ' + server.address().port);
 });
