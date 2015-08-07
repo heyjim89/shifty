@@ -14,7 +14,7 @@ function loopAction(){
         from: { x: 0, y: 0 },
         to: { x: 500, y: 500 },
         duration: 2000,
-        easing: 'easeOutQuad',
+        easing: 'elastic',
         start:    function(){update = setInterval(function(){updater()},0)},
         callback: function () {clearInterval(update);loopAction();}
     });
@@ -36,8 +36,8 @@ function loopAction2(){
     myTweenable2.tween({
         from: { x: 0, y: 0, rgb: 255 }, 
         to: { x: 400, y: 300, rgb: 0 },
-        duration: 500,
-        easing: 'easeOutQuad',
+        duration: 2000,
+        easing: 'bouncePast',
         start:    function(){update2 = setInterval(function(){updater2()},0)},
         callback: function () {clearInterval(update2);loopAction2();}
     });
@@ -61,7 +61,7 @@ function loopAction3(){
         from: { x: 100, y: 0 },
         to: { x: 600, y: 400 },
         duration: 1000,
-        easing: 'easeOutSine',
+        easing: 'easeInCirc',
         start:    function(){update3 = setInterval(function(){updater3()},0)},
         callback: function () {clearInterval(update3);loopAction3();}
     });
