@@ -11,8 +11,9 @@ app.use(bodyParser.urlencoded({extended: false}));
 app.get('/', indexController.index);
 app.get('/katie', indexController.katie); 
 app.get('/jim', indexController.jim); 
-// app.get('/justin', indexController.justin); 
-// app.get('/michael', indexController.miachel); 
+app.get('/justin', indexController.justin); 
+app.get('/justin-code', indexController.justincode); 
+app.get('/michael', indexController.michael); 
 
 
 var server = app.listen(3000, function() {

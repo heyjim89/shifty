@@ -11,6 +11,9 @@ var indexController = {
 	justin: function(req, res) {
 		res.render('justin');
 	},
+	justincode: function(req, res) {
+		res.render('justin-code');
+	},
 	michael: function(req, res) {
 		res.render('michael');
 	}
