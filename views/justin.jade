@@ -1,6 +1,44 @@
 extends layout
 
 block content
+
+	pre(style="whitespace:pre")
+		|var text=document.getElementById('text1')
+		|, style=text.style
+		|, myTweenable = new Tweenable()
+		|, update
+		|var updater = function(){
+		|	myPos = myTweenable.get()
+		|	style.left= myPos.x + 'px';
+		|	style.top= myPos.y + 'px';
+		|}
+		|function loop(){
+		|	style.left=0;
+		|	style.top=0;
+		|	myTweenable.tween({
+		|		from: { x: 25, y: 0 },
+		|		to: { x: 25, y: 400 },
+		|		duration: 1500,
+		|		easing: 'bounce',
+		|		start:function(){update = setInterval(function(){updater()},0)},
+		|		callback: function () {clearInterval(update);loop();}
+		|	});
+		|}
+		|loop();
+
+	pre(style="whitespace:pre")
+		|var output = document.getElementById('text')
+		|tweenable.tween({
+		|	from: { color: '#41ff88' },
+		|	to:   { color: '#0000FF' },
+		|	duration: 10000,
+		|	easing: 'easeOutQuart',
+		|	step: function (state) {
+		|		output.style.color = state.color;
+		|	}
+		|});
+		
+
 	div(id="text1", class="a")
 		h1 Hello!
 	div(id="text2", class="a") 
@@ -10,9 +48,3 @@ block content
 	div(id="text4", class="a") 
 		h1 Tween!
 
-
-	
-	//- h3 Try to click the button
-	//- button(id="btnHelixStart" class="big-button") Start Game!
-	//- div(id="helix-container")
-	//- 	button(class="segment")
