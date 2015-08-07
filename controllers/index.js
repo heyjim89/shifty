@@ -2,8 +2,17 @@ var indexController = {
 	index: function(req, res) {
 		res.render('index');
 	},
-	jim: function(req,res){
-		res.render('jim')
+	katie: function(req, res) {
+		res.render('katie');
+	},
+	jim: function(req, res) {
+		res.render('jim');
+	},
+	justin: function(req, res) {
+		res.render('justin');
+	},
+	michael: function(req, res) {
+		res.render('michael');
 	}
 };
 

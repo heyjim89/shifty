@@ -2,17 +2,40 @@ doctype html
 html(lang='en')
 	head
 		meta(charset="utf-8")
-		link(rel='stylesheet', href='jim.css')
+		link(href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css", rel="stylesheet")
+		link(href="katie.css", rel="stylesheet")
+		link(href="jim.css", rel="stylesheet")
+		link(href="justin.css", rel="stylesheet")
+		link(href="michael.css", rel="stylesheet")
 
-		
-		title Untitled
+		title Shifty Demo
 
 	body
-		block content
-		//- script(src="http://www.javascriptoo.com/application/html/js/jeremyckahn/shifty/shifty.min.js")
-		script(src="http://www.javascriptoo.com/application/html/js/jeremyckahn/shifty/shifty.min.js")
-		script(src="jim.js")
+	.container-fluid
+		.row
+			.container-fluid
+				nav.nav.navbar-default
+					.row
+						.col-md-10.col-md-offset-1
 
-		
+							ul.nav.navbar-left
+								li
+									a.navbar-brand(href="/") SHIFTY! DEMO
+							ul.nav.navbar-nav.navbar-right
+								li
+									a(href="/katie") KATIE
+								li
+									a(href="/jim") JIM
+								li
+									a(href="/justin") JUSTIN
+								li
+									a(href="/michael") MICHAEL
 
-		
+
+	block content
+
+	script(src="https://cdn.rawgit.com/jeremyckahn/shifty/master/dist/shifty.min.js")
+	script(src="katie.js")
+	script(src="jim.js")
+	script(src="justin.js")
+	script(src="michael.js")
